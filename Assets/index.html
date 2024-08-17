@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <title>Kalum Academy</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Sistema de control academico Kalum V 1.0</h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Carreras-tecnicas.html">Carreras-tecnicas</a></li>
+                <li><a href="./clases.html">clases</a></li>
+                <li><a href="./Inscripcion.html">Inscripcion</a></li>
+                <li><a href="./contacto.html">contacto</a></li>
+                <div class="clear-fix"> </div>
+            </ul>
+        </nav>
+        <article id="contenido">
+            <h2>Contacto</h2>
+            <hr>
+            <form action="">
+                <!--agrega tablas con tr lineas y td columnas-->
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input class="input-form" type="text" name="nombre" id="txtNombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input class="input-form" type="email" name="email" id="txtEmail"></Td>
+                    </tr>
+                    <tr>
+                        <td>Mensaje</td>
+                        <td><textarea class="input-form" name="mensaje" id="txtMensaje" cols="30" rows="10"></textarea>
+                        </Td>
+                    </tr>
+                    <tr>
+                        <!--convierte dos columnas en una-->
+                        <td colspan="2"><button id="btnEnviar">enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+            <hr>
+            <table border="2">
+                <tr>
+                    <th>#</th>
+                    <th>Selector</th>
+                    <th>Seleccionado</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <!--selector-universal jquery-->
+                    <td>1</td>
+                    <td>$('*')</td>
+                    <td>Selecciona todos los elementos del documento</td>
+                    <td><button id="selector-universal">seleccionar</button></td>
+                </tr>
+                <tr>
+                    <!--selector-id jquery-->
+                    <td>2</td>
+                    <td>$('#')</td>
+                    <td>Selecciona un elemento que se identifica con un <strong> id</strong></td>
+                    <td><button id="selector-id">seleccionar</button></td>
+                </tr>
+                <tr>
+                    <!--selector-class jquery-->
+                    <td>3</td>
+                    <td>$('.')</td>
+                    <td>Selecciona todos los elementos que tengan asignado la clase<strong> .input-form</strong></td>
+                    <td><button id="selector-class">seleccionar</button></td>
+                </tr>
+                <tr>
+                    <!--selector-element jquery-->
+                    <td>4</td>
+                    <td>$('button')</td>
+                    <td>Selecciona todos los elementos que tipo <strong> button</strong></td>
+                    <td><button id="selector-element">seleccionar</button></td>
+                </tr>
+                <tr>
+                    <!--selector-element jquery-->
+                    <td>5</td>
+                    <td>$('tables')</td>
+                    <td>Selecciona todos los elementos que tipo <strong> table</strong></td>
+                    <td><button id="selector-element-table">seleccionar</button></td>
+                </tr>
+            </table>
+        
+        </article>
+        <footer>
+            Todos los derechos reseverados &copy; kalum V 1.0
+        </footer>
+    </div>
+
+        <!--Manda a llamar el js-->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="./Assets/js/app.js"></script>
+</body>
+
+</html>

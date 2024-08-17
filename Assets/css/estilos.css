@@ -1,0 +1,20 @@
+h2{
+    color:red;
+    font-size: 50px;
+}
+#unico{
+    color: blue;
+    font-size: 50px;
+}
+.azul{
+    color: blue;
+}
+h1{
+    background: #ec610a;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+p{
+    background: #a40a3c;
+    padding:100px;
+}
